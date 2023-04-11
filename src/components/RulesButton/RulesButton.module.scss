@@ -1,0 +1,18 @@
+.buttonContainer {
+    position: fixed;
+    inset: auto 0 0 auto;
+    padding: 0 2rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    max-width: 1000px;
+}
+
+@media only screen and (max-width: 600px){
+    .buttonContainer {
+        justify-content: center;
+        inset: auto auto 0;
+        position: unset;
+        margin: unset;
+    }
+}

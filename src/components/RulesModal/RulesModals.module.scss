@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+    position: relative;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        span {
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+    }
+
+    >img {
+        height: clamp(250px, 300px, 300px);
+    }
+
+    >button {
+        position: absolute;
+        inset: 0 0.5rem auto auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        justify-content: center;
+        gap: 5rem;
+
+        >div {
+            justify-content: center;
+        }
+
+        >button {
+            position: unset;
+            img {
+                height: 1.5rem !important;
+            }
+        }
+    }
+}

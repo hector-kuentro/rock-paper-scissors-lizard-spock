@@ -1,0 +1,42 @@
+$containerSize: 300px;
+$containerSizeSm: 273px;
+
+.gameContainer {
+    background-image: url('../../assets/images/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: $containerSize;
+    height: $containerSize;
+
+    >section {
+        position: absolute;
+        display: flex;
+    }
+
+    >section:first-of-type {
+        inset: -2rem 0 auto;
+        justify-content: center;
+    }
+
+    >section:nth-of-type(2) {
+        inset: 20% -40px auto;
+        justify-content: space-between;
+    }
+
+    >section:last-of-type {
+        inset: auto 20px -2rem;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .gameContainer {
+        width: $containerSizeSm;
+        height: $containerSizeSm;
+        margin: 2rem 0;
+    }
+}
