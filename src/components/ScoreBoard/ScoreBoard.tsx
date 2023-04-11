@@ -14,10 +14,17 @@ const ScoreBoard: FC = () => {
                 <Image src={logo} />
             </div>
 
-            <div className={styles.scoreContainer}>
-                <span>SCORE</span>
-                <p>{score}</p>
-            </div>
+            <section>
+                <div className={styles.scoreContainer}>
+                    <span>SCORE</span>
+                    <p>{score}</p>
+                </div>
+
+                <div className={styles.scoreContainer}>
+                    <span>HIGH SCORE</span>
+                    <p>{highScore}</p>
+                </div>
+            </section>
         </div>
     )
 }
