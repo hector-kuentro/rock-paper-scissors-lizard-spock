@@ -49,7 +49,7 @@ Users should be able to:
 
   
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [rock-paper-scissors-lizard-spock-topaz.vercel.app](https://rock-paper-scissors-lizard-spock-topaz.vercel.app/)
 
   
 
